@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 <link rel="stylesheet" href="css/aos.css">
 <link rel="stylesheet" href="css/style.css">
-<style>
+<!--<style>
 .show-cart li {
   display: flex;
 }
@@ -28,7 +28,8 @@
   height: 200px;
   align-self: center;
 }
-</style>
+</style>-->
+
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 <div class="site-wrap">
@@ -51,10 +52,20 @@
 <li><a href="#" class=""><span class="icon-linkedin"></span></a></li>
 </ul>
 </div>
-<div class="col-6">
+
+<div class="col-5">
 <p class="mb-0 float-right">
-<span class="mr-3"><a href="tel://#"> <span class="icon-phone mr-2" style="position: relative; top: 2px;"></span><span class="d-none d-lg-inline-block text-black">(+1) 234 5678 9101</span></a></span>
-<span><a href="#"><span class="icon-envelope mr-2" style="position: relative; top: 2px;"></span><span class="d-none d-lg-inline-block text-black"><span class="__cf_email__" data-cfemail="2053484f5060594f5552444f4d41494e0e434f4d">[email&#160;protected]</span></span></a></span>
+<span class="mr-3"><a href="tel://#"> <span class="icon-phone mr-2" style="position: relative; top: 2px;"></span><span class="d-none d-lg-inline-block text-black">+91 9834563222</span></a></span>
+<span><a href="#"><span class="icon-envelope mr-2" style="position: relative; top: 2px;"></span><span class="d-none d-lg-inline-block text-black"><span class="__cf_email__" data-cfemail="2053484f5060594f5552444f4d41494e0e434f4d"></span></span></a></span>
+<span><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart"><img type="button" border="0" src="images/image1.png" width="20" height="20">(<span class="total-count"></span>)</button></span>
+</div>
+
+<!--<nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+    <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart"><img type="button" border="0" src="images/image1.png" width="50" height="50">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+    </div>
+</nav>-->
 </p>
 </div>
 </div>
@@ -75,8 +86,6 @@
 <li><a href="#services-section" class="nav-link">Services</a></li>
 <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
 <li><a href="#contact-section" class="nav-link">Contact</a></li>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
-<button class="clear-cart btn btn-danger">Clear Cart</button>
 </ul>
 </nav>
 </div>
@@ -204,6 +213,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Order now</button>
+		<button class="clear-cart btn btn-danger">Clear Cart</button>
       </div>
     </div>
   </div>
